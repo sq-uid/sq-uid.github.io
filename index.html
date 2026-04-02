@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>squid.github.io</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-top">
+        <span class="header-tag">PERSONAL BLOG</span>
+        <nav class="header-nav">
+          <a href="index.html">Home</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+      <div class="header-title-block">
+        <h1 class="site-title">SQUID</h1>
+        <p class="site-desc">Security, systems, and everything in between.</p>
+      </div>
+      <div class="header-rule"></div>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="hero-post">
+      <a href="posts/post-1.html" class="hero-link">
+        <div class="hero-inner">
+          <div class="hero-meta">
+            <span class="category-tag">CYBERSECURITY</span>
+            <span class="post-date">April 2, 2026</span>
+          </div>
+          <h2 class="hero-title">CVE-2024-21413: Dissecting the Outlook Moniker Link Vulnerability</h2>
+          <p class="hero-excerpt">A look at how a seemingly trivial URI handling flaw in Microsoft Outlook became a full credential theft vector — and how the PoC works under the hood.</p>
+          <span class="read-more">Read more →</span>
+        </div>
+      </a>
+    </section>
+
+    <div class="divider-line"></div>
+
+    <section class="post-grid">
+
+      <article class="post-card">
+        <a href="posts/post-2.html">
+          <div class="card-meta">
+            <span class="category-tag">NETWORKING</span>
+            <span class="post-date">March 28, 2026</span>
+          </div>
+          <h3 class="card-title">Covert Channels via TCP IP ID Fields</h3>
+          <p class="card-excerpt">Building a low-bandwidth steganographic communication layer using AES-encrypted payloads embedded in IP header fields.</p>
+          <span class="read-more">Read more →</span>
+        </a>
+      </article>
+
+      <article class="post-card">
+        <a href="posts/post-3.html">
+          <div class="card-meta">
+            <span class="category-tag">CRYPTOGRAPHY</span>
+            <span class="post-date">March 15, 2026</span>
+          </div>
+          <h3 class="card-title">Notes on Christof Paar's Crypto Lectures</h3>
+          <p class="card-excerpt">Running notes and insights from working through the full lecture series — from classical ciphers to elliptic curve cryptography.</p>
+          <span class="read-more">Read more →</span>
+        </a>
+      </article>
+
+      <article class="post-card">
+        <a href="posts/post-4.html">
+          <div class="card-meta">
+            <span class="category-tag">LINUX</span>
+            <span class="post-date">March 3, 2026</span>
+          </div>
+          <h3 class="card-title">Debugging a PCIe ASPM Kernel Panic on Linux Mint</h3>
+          <p class="card-excerpt">Tracing recurring NVMe I/O failures and AER correctable errors back to a Qualcomm WiFi card's power management substates.</p>
+          <span class="read-more">Read more →</span>
+        </a>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-name">squid</span>
+      <span class="footer-sep">·</span>
+      <span class="footer-note">B.Tech · Cybersecurity · GIAC GFACT</span>
+    </div>
+  </footer>
+
+</body>
+</html>
