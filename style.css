@@ -325,6 +325,15 @@ a {
   text-align: justify;
 }
 
+.post-body ul {
+  margin: 1.25rem 0;
+  padding-left: 1.2rem;
+  max-width: 720px;
+}
+
+.post-body li {
+  text-align: justify;
+}
 .post-body code {
   font-family: var(--font-mono);
   font-size: 0.85rem;
