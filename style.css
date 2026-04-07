@@ -197,15 +197,14 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  border: none;
   background: none;
+  border: none;
 }
 
 .post-card {
   display: grid;
-  grid-template-columns: 1fr; /* text + preview */
   gap: 2rem;
-  padding: 2rem;
+  padding: 1.25rem 1.5rem;
   border: 1px solid var(--border);
   background: var(--black);
   transition: background 0.15s;
@@ -216,7 +215,6 @@ a {
 }
 
 .post-card a {
-  display: block;
   height: 100%;
 }
 
@@ -225,9 +223,25 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .card-preview {
+.card-preview {
     display: none;
   }
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem 0;
+  width:100%;
 }
 
 .card-meta {
@@ -239,13 +253,27 @@ a {
 
 .card-title {
   font-family: var(--font-display);
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.15;
   text-transform: uppercase;
   margin-bottom: 0.65rem;
   transition: color 0.15s;
-  max-width: 1000px;
+  max-width: none;
+}
+
+@media (max-width: 768px) {
+  .card-link {
+    grid-template-columns: 1fr;
+  }
+
+  .card-image {
+    height: 180px;
+  }
+
+  .card-content {
+    padding: 1rem 0;
+  }
 }
 
 .post-card:hover .card-title {
@@ -253,12 +281,20 @@ a {
 }
 
 .card-excerpt {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   color: #aaa;
   line-height: 1.6;
-  margin-bottom: 1rem;
-  max-width: 600px;
+  margin: 0.75rem 0 1rem;
+  max-width: none;
 }
+.card-link {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  width:100%;
+}
+
 
 /* ─── Footer ────────────────────────────────────────────────── */
 .site-footer {
