@@ -259,6 +259,14 @@ a {
   max-width: none;
 }
 
+.card-link {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  width:100%;
+}
+
 @media (max-width: 768px) {
   .site-header {
     padding: 0 1rem;
@@ -311,25 +319,6 @@ a {
   line-height: 1.6;
   margin: 0.75rem 0 1rem;
   max-width: none;
-}
-
-.post-card:hover .card-title {
-  color: var(--accent);
-}
-
-.card-excerpt {
-  font-size: 1.15rem;
-  color: #aaa;
-  line-height: 1.6;
-  margin: 0.75rem 0 1rem;
-  max-width: none;
-}
-.card-link {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 1.5rem;
-  align-items: start;
-  width:100%;
 }
 
 
